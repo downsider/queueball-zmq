@@ -3,7 +3,7 @@
  * @package queueball-zmq
  */
 
-namespace Silktide\QueueBall\ZeroMq;
+namespace Lexide\QueueBall\ZeroMq;
 
 class SocketFactory
 {

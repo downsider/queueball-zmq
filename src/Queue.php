@@ -1,11 +1,11 @@
 <?php
 
-namespace Silktide\QueueBall\ZeroMq;
+namespace Lexide\QueueBall\ZeroMq;
 
-use Silktide\QueueBall\ZeroMq\Exception\NotImplementedException;
-use Silktide\QueueBall\Message\QueueMessage;
-use Silktide\QueueBall\Message\QueueMessageFactoryInterface;
-use Silktide\QueueBall\Queue\AbstractQueue;
+use Lexide\QueueBall\ZeroMq\Exception\NotImplementedException;
+use Lexide\QueueBall\Message\QueueMessage;
+use Lexide\QueueBall\Message\QueueMessageFactoryInterface;
+use Lexide\QueueBall\Queue\AbstractQueue;
 
 /**
  * @package queueball

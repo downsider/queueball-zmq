@@ -2,9 +2,9 @@
 /**
  * @package queueball-zmq
  */
-namespace Silktide\QueueBall\ZeroMq\Test;
+namespace Lexide\QueueBall\ZeroMq\Test;
 
-use Silktide\QueueBall\ZeroMq\Queue;
+use Lexide\QueueBall\ZeroMq\Queue;
 
 class QueueTest extends \PHPUnit_Framework_TestCase {
 
@@ -23,13 +23,13 @@ class QueueTest extends \PHPUnit_Framework_TestCase {
     {
         $this->socket = \Mockery::mock("\\ZMQSocket");
 
-        $this->context = \Mockery::mock("Silktide\\QueueBall\\ZeroMq\\SocketFactory");
+        $this->context = \Mockery::mock("Lexide\\QueueBall\\ZeroMq\\SocketFactory");
         $this->context->shouldReceive("createPushSocket")->atMost()->once()->andReturn($this->socket);
         $this->context->shouldReceive("createPullSocket")->atMost()->once()->andReturn($this->socket);
 
-        $this->queueMessage = \Mockery::mock("Silktide\\QueueBall\\Message\\QueueMessage");
+        $this->queueMessage = \Mockery::mock("Lexide\\QueueBall\\Message\\QueueMessage");
 
-        $this->messageFactory = \Mockery::mock("Silktide\\QueueBall\\Message\\QueueMessageFactoryInterface");
+        $this->messageFactory = \Mockery::mock("Lexide\\QueueBall\\Message\\QueueMessageFactoryInterface");
         $this->messageFactory->shouldReceive("createMessage")->andReturn($this->queueMessage);
     }
 
@@ -105,4 +105,3 @@ class QueueTest extends \PHPUnit_Framework_TestCase {
     }
 
 }
- 

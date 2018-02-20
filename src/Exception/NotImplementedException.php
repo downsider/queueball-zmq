@@ -3,7 +3,7 @@
  * @package queueball-zmq
  */
 
-namespace Silktide\QueueBall\ZeroMq\Exception;
+namespace Lexide\QueueBall\ZeroMq\Exception;
 
 class NotImplementedException extends \Exception
 {
